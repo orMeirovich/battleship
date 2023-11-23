@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Ship</title>
+    <link rel="icon" type="image/png" href="newLogo.jpg" />
+    <link href="style.css" rel="stylesheet">
+    <script defer src="main.js"> </script>
+</head>
+<body>
+    <main id="homePage">
+        <img src="title.png" class="title">
+        <form>
+            <div> Enter Your Name Please:</div>
+            <input type="text" id="name" required>  
+            <div> Choose one option:</div>
+            <select id="levels">
+                <option value="Easy">Easy</option>
+                <option value="Hard">Hard</option>
+              </select>
+              <submit id="openGame" type="submit"> start </submit>
+        </form>
+    </main>
+    <div id="gameBoard">
+    <video autoplay muted loop>
+        <source
+                src="https://mdbootstrap.com/img/video/Sail-Away.mp4"
+                type="video/mp4"
+                />
+      </video>
+      <header>
+         BATTLESHIP 
+         <img id="logo" src="newLogo.jpg">
+         <img id="backHome" src="returnHome.jpg">
+    
+      </header>
+      <section>
+        <div id="statusContainer"> 
+<P id="statusbar"> place five boats ...</P>
+        </div>
+        <div id="boards">
+            <div>
+                <h1 id="nameBoard"> Your Board </h1>
+                <div id="playerBoard">
+            </div>
+         </div>
+            <div id="computer">
+                <h1> Opponent's Board</h1>
+                <div id="computerBoard">
+                
+                </div>
+            </div>
+        </div>
+        
+
+      </section>
+      <footer>
+        <button id="playButton"> Start Game </button>
+      </footer>
+      <div id="background"> </div>
+
+
+      <form id="popup" class="custom-animation">
+        <div class=" statusWin"> </div>
+        <button id="play-again"> PLAY AGAIN </button>
+    </form>
+</div>
+    
+        
+      
+</body>
+</html>
